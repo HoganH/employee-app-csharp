@@ -65,7 +65,7 @@ namespace mainapp
         public void TestMiddle()
         {
             Employee employee = new Employee("James", "X", "Kirk");
-            Assert.AreEqual<string>(employee.MiddleName, "X");
+            Assert.AreEqual<string>(employee.MiddleName, "s");
         }
     }
 }
