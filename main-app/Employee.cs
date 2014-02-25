@@ -15,18 +15,26 @@ namespace mainapp
     public class Employee
     {
         private string firstName;
+        private string middleName;
         private string lastName;
         private int age;
 
         public int Age
         {
-           get { return age; }
-           set { age = value; }
+            get { return age; }
+            set { age = value; }
         }
 
         public Employee(string firstName, string lastName)
+            : this(firstName, string.Empty, lastName)
+        {
+        }
+
+
+        public Employee(string firstName, string middleName, string lastName)
         {
             this.firstName = firstName;
+            this.middleName = middleName;
             this.lastName = lastName;
         }
 
@@ -38,6 +46,11 @@ namespace mainapp
         public string GetLastName()
         {
             return lastName;
+        }
+
+        public string MiddleName
+        {
+            get { return this.middleName; }
         }
 
 
@@ -56,7 +69,8 @@ namespace mainapp
 
         public override string ToString()
         {
-            return String.Format("Employee{{{0},{1}}}", firstName, lastName);
+            string tempstr = String.Format("Employee{{{0},{1}}}", firstName, lastName);
+            return tempstr;
         }
 
         public object GetFullName()

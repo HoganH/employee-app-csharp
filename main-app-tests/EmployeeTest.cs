@@ -58,5 +58,14 @@ namespace mainapp
             Employee employee2 = new Employee("Jean", "Picard");
             Assert.AreNotEqual(employee, employee2);
         }
+
+
+        /*Custom Unit Tests - Destrucitve Testing*/
+        [TestCategory("Unit"), TestMethod]
+        public void TestMiddle()
+        {
+            Employee employee = new Employee("James", "X", "Kirk");
+            Assert.AreEqual<string>(employee.MiddleName, "X");
+        }
     }
 }
