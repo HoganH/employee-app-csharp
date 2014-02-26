@@ -10,14 +10,14 @@ namespace mainapp
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee("John", "Kennedy");
+            //Employee employee = new Employee("John", "Kennedy");
             
-            System.Console.WriteLine( employee.ToString());
+            //System.Console.WriteLine( employee.ToString());
 
-            employee = new Employee("James", "X", "Kirk");
-            System.Console.WriteLine(employee.MiddleName);
+            //employee = new Employee("James", "X", "Kirk");
+            //System.Console.WriteLine(employee.MiddleName);
 
-            System.Console.ReadKey();
+            //System.Console.ReadKey();
         }
     }
 }
